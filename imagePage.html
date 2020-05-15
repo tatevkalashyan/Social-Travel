@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+</head>
+<body>
+<header class="h-115 w-100"></header>
+<main>
+    <div class="container max-container">
+        <div class="image-page d-flex p-40-20">
+            <div class="flex-1 px-20 relative">
+                <span class="make-big-icon abs">
+                    <img src="img/make-big.png" alt="">
+                </span>
+                <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg" alt="" class="w-100 h-100">
+            </div>
+            <div class="flex-1 px-20">
+                <div class="d-flex just-content-between">
+                    <a href="#" class="fs-reg-16 color-gray text-underline"><img src="img/arrow-up-right-black.png" alt="" width="18" height="18" class="mr-5">www.example.com</a>
+                    <ul class="list-unstyled d-flex">
+                        <li class="mr-18" data-toggle="modal" data-target="#editImage"><a href="#"><img src="img/edit-image.png" alt=""></a></li>
+                        <li class="mr-18">
+                            <div class="dropdown">
+                                <div class="" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/share-image.png" alt="">
+                                </div>
+                                <div class="dropdown-menu lg" aria-labelledby="dropdownMenu12">
+                                    <div>
+                                        <p class="fs-reg-16">Share this Image</p>
+                                        <ul class="list-unstyled d-flex just-content-between  align-items-center">
+                                            <li><a href="#"><img src="img/whatsup.png" alt=""></a></li>
+                                            <li><a href="#"><img src="img/face.png" alt=""></a></li>
+                                            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+                                            <li><a href="#"><img src="img/mail.png" alt=""></a></li>
+                                            <li><a href="#"><img src="img/shareImg.png" alt=""></a></li>
+                                        </ul>
+                                        <p>Or send to</p>
+                                        <form action="">
+                                            <div class="form-group relative">
+                                                <span class="search-icon abs"><img src="img/search.png" width="22" height="0" alt="search icon" ></span>
+                                                <input type="email" class="form-control pl-32" placeholder="Name or email">
+                                            </div>
+                                        </form>
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-1 d-flex">
+                                                <div class="avatar-img mr-18"></div>
+                                                <div class="avatar-name">
+                                                    <p class="fs-reg-16 m-0">Username</p>
+                                                    <p class="fs-reg-12 m-0">Username</p>
+                                                </div>
+                                            </div>
+                                            <button class="btn-dark fs-bold-18">Send</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div  id="dropdownMenu13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <img src="img/settings-image.png" alt="">
+                                </div>
+                                <ul class="dropdown-menu text-left" aria-labelledby="dropdownMenu13">
+                                    <li><a href="#">Download Image</a></li>
+                                    <li><a href="#">Report Image</a></li>
+                                    <li><a href="#">Delete</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-100">
+                    <h2 class="fs-bold-36">Image Name Example</h2>
+                    <p class="fs-reg-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="mb-100">
+                    <h4 class="fs-bold-16">Comments</h4>
+                    <p class="fs-reg-16">Share feedback, ask a question or give a high five</p>
+                    <div class="d-flex align-items-center mt-20">
+                        <div class="avatar-img mr-18">
+                            <img src="img/avatar-icon.png" width="50" height="50" alt="">
+                        </div>
+                        <div class="flex-1">
+                            <input type="text" placeholder="Add a comment" class="pl-32 form-control w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editImage" tabindex="-1" role="dialog" aria-labelledby="editImage" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-flex align-items-center flex-row-rev">
+                    <button type="button" class="close fs-reg-32" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title fs-bold-24 flex-1 d-flex just-content-center" id="myModalLabel">Edit this Image</h4>
+                </div>
+                <div class="modal-body px-64 py-20">
+                    <div class="d-flex">
+                        <div class="flex-1 mr-18">
+                            <form>
+                                <div class="form-group relative">
+                                    <label  class="fs-reg-20">Board</label>
+                                    <select type="text" class="form-control" id="chooseImage" aria-describedby="emailHelp">
+                                        <option value="1" disabled selected>Board name</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                    <img src="img/angle-down.png" alt="" class="angle-down abs">
+                                </div>
+                                <div class="form-group mb-100">
+                                    <label for="textarea" class="fs-reg-20">Note</label>
+                                    <textarea class="form-control" rows="6" id="textarea" aria-describedby="emailHelp">Write a note about this image...</textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="flex-1">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539__340.jpg" alt="" class="w-100 h-100">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer px-64">
+                    <button type="button" class="btn-transparent fs-bold-18 color-gray" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn-transparent fs-bold-18">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="h-115 w-100"></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
